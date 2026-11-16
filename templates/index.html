@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Student Study Assistant</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="app">
+        <aside class="sidebar">
+            <h2>🎓 Study AI</h2>
+            <button id="newChat">+ New Chat</button>
+            <div class="side-info">
+                <p>AI Student Study Assistant</p>
+                <small>Powered by Groq AI</small>
+            </div>
+        </aside>
+
+        <main class="main">
+            <header>
+                <div>
+                    <h2>AI Student Study Assistant</h2>
+                    <p>Your personal learning companion</p>
+                </div>
+                <span class="status">● Online</span>
+            </header>
+
+            <section id="chatBox" class="chat-box">
+                <div class="welcome">
+                    <div class="robot">🤖</div>
+                    <h1>How can I help you today?</h1>
+                    <p>Ask me anything about AI, ML, DSA and Programming.</p>
+                    <div class="suggestions">
+                        <button class="suggestion">What is Artificial Intelligence?</button>
+                        <button class="suggestion">Explain Machine Learning</button>
+                        <button class="suggestion">Explain Binary Search</button>
+                    </div>
+                </div>
+            </section>
+
+            <div class="input-area">
+                <textarea id="messageInput" placeholder="Ask your study question..." rows="1"></textarea>
+                <button id="sendBtn">➤</button>
+            </div>
+            <p class="footer">AI can make mistakes. Verify important information.</p>
+        </main>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
